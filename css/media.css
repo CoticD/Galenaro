@@ -1,0 +1,53 @@
+@media screen and (min-width: 576px) {
+  .btn-text{
+    font-size: 1rem;
+  }
+
+}
+@media screen and (min-width: 768px) {
+  .btn-text{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-text{
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-text{
+    font-size: 2rem;
+  }
+  .contain {
+    max-width: 1200px;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+        .navigacija, .iskanje{
+          display: none;
+        }
+        .navbar{
+          display: flex;
+        }
+        .btn-text{
+          font-size: 1.5rem;
+        }
+        .container{
+          padding: 0;
+        }
+        .artikel-naslov{
+          font-size: 1rem;
+        }
+}
+
+@media screen and (max-width: 1200px) {
+  .contain {
+    padding: 0;
+  }
+}
