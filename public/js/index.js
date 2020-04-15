@@ -16,18 +16,18 @@
 // When the user clicks on the button, open the modal
 btnLogin.onclick = function() {
   modalLogin.style.display = "block";
-}
+};
 btnRegistraija.onclick = function() {
   modalRegistraija.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 closeLogin.onclick = function() {
   modalLogin.style.display = "none";
-}
+};
 closeRegistracija.onclick = function() {
   modalRegistraija.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -37,4 +37,4 @@ window.onclick = function(event) {
   if (event.target == modalRegistraija) {
     modalRegistraija.style.display = "none";
   }
-}
+};

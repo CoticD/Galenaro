@@ -23,82 +23,84 @@ a:link, a:visited, a:hover, a:active {
 .ozadje {
   background-image: url("../images/ozadje.jpg");
   background-repeat: repeat-x repeat-y;
+  padding: 0 100px;
 }
 
-.head-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-/* LOGIN */
-.top-bar {
-  text-align: right;
-}
-
-.top-bar a {
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  color: #000;
-}
-
-.top-bar a:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-/* LOGO */
-/* .logo {
-
-} */
-/* ISKANJE */
-.iskanje {
-  padding: 20px;
-}
-
-.iskanje form {
-  text-align: center;
-}
-
-/* NAVIGACIJA */
-.navigacija {
-  align-items: flex-end;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.nav-link {
-  color: #000;
+/* GLAVA -> LOGO */
+.logo {
+  float: left;
+  width: 30%;
+  height: 100px;
   padding: 0;
-  width: 20%;
 }
 
-.btn-ozadje, .btn-ozadje-selected {
-  padding: 10px;
-  transition: 0.5s;
+.logo-a {
+  font-size: 3rem;
+  margin: 0;
 }
 
-.btn-ozadje-selected {
-  background-color: #000;
+.logo-b {
+  font-size: 1.5rem;
+  padding: 0 0 0 10px
+}
+
+/* GLAVA -> PRIJAVA */
+.prijava-bar {
+  align-items: center;
+  display: flex;
+  float: left;
+  height: 40px;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+.prijava-bar a{
+  align-items: center;
+  display: inline-flex;
+  font-size: 1.1rem;
+  color: #000;
+  transition: all 300ms linear 0s;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.prijava-bar a:hover {
   color: #fff;
 }
 
-.btn-ozadje:hover {
-  background-color: #000;
+.prijava-bar a i{
+  padding: 0 5px;
+}
+
+/* GLAVA -> NAVIGACIJA */
+.navigacija-bar {
+  float: left;
+  height: 60px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.navigacija-bar a{
+  display: inline-flex;
+  font-size: 2rem;
+  color: #000;
+  transition: all 300ms linear 0s;
+  text-transform: uppercase;
+  padding: 0px 19px;
+}
+
+.navigacija-bar a:hover {
   color: #fff;
 }
 
-.btn-text {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.7rem;
-}
-
-/* MOBILNA NAVIGACIJA */
+/* GLAVA -> MOBILNA NAVIGACIJA */
 .navbar {
   display: none;
 }
@@ -302,4 +304,9 @@ a:link, a:visited, a:hover, a:active {
 .input-submit:hover {
   background-color: #2868c7;
   transition: background-color 0.2s;
+}
+
+.noga {
+  padding: 50px;
+  text-align: center;
 }
