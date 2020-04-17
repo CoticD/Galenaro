@@ -1,6 +1,7 @@
 body {
-  background-image: linear-gradient(90deg, #FEDBB7, #765c48, #765c48, #FEDBB7);
+  background-color: #ededed;
   width: auto;
+  color: #222222;
 }
 
 html {
@@ -14,90 +15,133 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .contain {
-  width: 100%;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /* GLAVA */
-.ozadje {
-  background-image: url("../images/ozadje.jpg");
-  background-repeat: repeat-x repeat-y;
-  padding: 0 100px;
-}
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.topBar{
+  background-color: #f8f8f8;
+  padding: 0 100px 20px;
+  width: 100%;
 }
 
 /* GLAVA -> LOGO */
-.logo {
-  float: left;
-  width: 30%;
-  height: 100px;
-  padding: 0;
+.logo-container{
+  margin-left: 0;
+  display: inline-block;
 }
 
-.logo-a {
-  font-size: 3rem;
-  margin: 0;
-}
+/* GLAVA -> KOSARA */
 
-.logo-b {
-  font-size: 1.5rem;
-  padding: 0 0 0 10px
-}
-
-/* GLAVA -> PRIJAVA */
-.prijava-bar {
-  align-items: center;
-  display: flex;
-  float: left;
-  height: 40px;
-  justify-content: flex-end;
-  width: 70%;
-}
-
-.prijava-bar a{
-  align-items: center;
-  display: inline-flex;
-  font-size: 1.1rem;
-  color: #000;
-  transition: all 300ms linear 0s;
-  text-transform: uppercase;
-  padding: 0 10px;
-}
-
-.prijava-bar a:hover {
+.kosara-container{
+  background-color: #303030;
+  height: 72px;
+  float: right;
   color: #fff;
+  display: flex;
+  align-items: center;
+}
+.kosara-levo{
+  padding: 0 20px;
+  border-right: #fff solid 2px;
+  font-size: 1.2rem;
+}
+.kosara-izdelki{
+  font-size: 0.9rem;
+}
+.kosara-desno{
+  font-size: 2rem;
+  padding: 0 20px;
 }
 
-.prijava-bar a i{
-  padding: 0 5px;
+/* GLAVA -> ISKANJE */
+.iskanje-container{
+  height: 72px;
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.iskanje-container input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+.iskanje-container button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.iskanje-container button:hover {
+  background: #0b7dda;
 }
 
 /* GLAVA -> NAVIGACIJA */
-.navigacija-bar {
-  float: left;
-  height: 60px;
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.navigacija-bar a{
-  display: inline-flex;
-  font-size: 2rem;
-  color: #000;
-  transition: all 300ms linear 0s;
-  text-transform: uppercase;
-  padding: 0px 19px;
+
+.navigacija{
+  background-color: #f8f8f8;
+  border-top: grey solid 1px;
+  padding: 0 100px;
+  width: 100%;
+  height: 50px;
 }
 
-.navigacija-bar a:hover {
-  color: #fff;
+.navigacija-bar {
+  display: inline-block;
+  height: 50px;
+}
+
+.izbran{
+  background: #2196F3;
+  color: #f8f8f8 !important;
+}
+
+/* GLAVA -> PRIJAVA */
+
+.prijava {
+  display: inline-block;
+  height: 50px;
+  float: right;
+}
+
+.navigacija-bar a, .prijava a{
+  height: 50px;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 120px;
+  color: inherit;
+  color: #222222;
+  text-transform: uppercase;
+  float: left;
+  padding: 10px 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: background 1s, color 1s;
+  border-right: grey solid 2px;
+}
+.prijava a{
+  width: 200px;
+}
+.navigacija-bar a:last-child, .prijava a:last-child{
+  border-right: 0;
+}
+
+.navigacija-bar a:hover, .prijava a:hover {
+  background: #2196F3;
+  color: #f8f8f8;
 }
 
 /* GLAVA -> MOBILNA NAVIGACIJA */
@@ -126,7 +170,7 @@ a:link, a:visited, a:hover, a:active {
 
 /* STORITVE */
 .storitve {
-  background-color: #fff8db;
+  background-color: #ededed;
   padding: 10px;
 }
 
@@ -137,7 +181,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .ponudba, .unikat {
-  background-color: #fff8db;
+  background-color: #ededed;
   padding: 10px;
 }
 

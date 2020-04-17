@@ -1,0 +1,100 @@
+<div class="topBar">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="">
+    </div>
+    <div class="kosara-container">
+      <div class="kosara-levo">
+        KOŠARICA
+        <div class="kosara-izdelki">
+          0 Izdelkov
+        </div>
+      </div>
+      <div class="kosara-desno">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </div>
+      <form class="iskanje-container" action="/" method="post">
+        <input type="text" name="" value="Iskanje...">
+        <button type="submit" name="button"><i class="fas fa-search"></i></button>
+      </form>
+</div>
+<div class="navigacija">
+  <div class="navigacija-bar">
+      <a href="#" role="button" class="izbran">
+          <i class="fas fa-home"></i>
+      </a>
+      <a href="#" role="button">
+          TRGOVINA
+      </a>
+      <a href="#" role="button">
+          STORITVE
+      </a>
+      <a href="#" role="button">
+          O NAS
+      </a>
+      <a href="#" role="button">
+          KONTAKT
+      </a>
+  </div>
+  <div class="prijava">
+    <a id="loginBtn" href="#" role="button">
+        <i class="fas fa-user"></i><span> Prijava</span>
+    </a>
+    <a id="registracijaBtn" href="#" role="button">
+        <i class="fas fa-key"></i><span> Registracija</span>
+    </a>
+  </div>
+</div>
+
+<!-- MODAL LOGIN -->
+<div id="modalL" class="modal">
+  <div class="modal-content">
+    <form action="/prijava" method="post">
+      <i class="fas fa-times close" id="closeL"></i>
+      <h1>PRIJAVA</h1>
+      <div class="input-container">
+        <label for="email" class="label-icon">
+          <i class="fas fa-user"></i>
+        </label>
+        <input class="input-box" type="email" name="email" placeholder="E-mail..." id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      </div>
+      <div class="input-container">
+        <label for="password" class="label-icon">
+          <i class="fas fa-lock"></i>
+        </label>
+        <input class="input-box" type="text" name="geslo" placeholder="Geslo..." id="geslo" required>
+      </div>
+      <a href="#"></a>
+      <input type="submit" value="Prijava" class="input-submit">
+    </form>
+  </div>
+</div>
+
+<!-- MODAL REGISTRACIJA -->
+<div id="modalR" class="modal">
+  <div class="modal-content">
+    <form action="/registracija" method="post">
+      <i class="fas fa-times close" id="closeR"></i>
+      <h1>REGISTRACIJA</h1>
+      <div class="input-container">
+        <label for="email" class="label-icon">
+          <i class="fas fa-user"></i>
+        </label>
+        <input class="input-box" type="email" name="email" placeholder="E-mail..." id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      </div>
+      <div class="input-container">
+        <label for="password" class="label-icon">
+          <i class="fas fa-lock"></i>
+        </label>
+        <input class="input-box" type="text" name="geslo" placeholder="Geslo..." id="geslo" required>
+      </div>
+      <div class="input-container">
+        <label for="password" class="label-icon">
+          <i class="fas fa-lock"></i>
+        </label>
+        <input class="input-box" type="text" name="password" placeholder="Ponovi Geslo..." id="username" required>
+      </div>
+      <input type="submit" value="Registriraj" class="input-submit">
+    </form>
+  </div>
+</div>
